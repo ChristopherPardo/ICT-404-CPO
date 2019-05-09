@@ -38,28 +38,29 @@
             // blQuestion
             // 
             this.blQuestion.AutoSize = true;
-            this.blQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blQuestion.Location = new System.Drawing.Point(53, 59);
+            this.blQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blQuestion.Location = new System.Drawing.Point(102, 97);
             this.blQuestion.Name = "blQuestion";
-            this.blQuestion.Size = new System.Drawing.Size(107, 24);
+            this.blQuestion.Size = new System.Drawing.Size(198, 42);
             this.blQuestion.TabIndex = 0;
             this.blQuestion.Text = "Votre nom";
             this.blQuestion.Click += new System.EventHandler(this.label1_Click);
             // 
             // blName
             // 
-            this.blName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.blName.Location = new System.Drawing.Point(185, 59);
+            this.blName.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.blName.Location = new System.Drawing.Point(330, 90);
             this.blName.Name = "blName";
-            this.blName.Size = new System.Drawing.Size(100, 29);
+            this.blName.Size = new System.Drawing.Size(410, 49);
             this.blName.TabIndex = 1;
             this.blName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btBienvenue
             // 
-            this.btBienvenue.Location = new System.Drawing.Point(160, 178);
+            this.btBienvenue.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBienvenue.Location = new System.Drawing.Point(282, 366);
             this.btBienvenue.Name = "btBienvenue";
-            this.btBienvenue.Size = new System.Drawing.Size(141, 75);
+            this.btBienvenue.Size = new System.Drawing.Size(227, 71);
             this.btBienvenue.TabIndex = 2;
             this.btBienvenue.Text = "Bienvenue";
             this.btBienvenue.UseVisualStyleBackColor = true;
@@ -68,22 +69,22 @@
             // rp
             // 
             this.rp.AutoSize = true;
-            this.rp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rp.Location = new System.Drawing.Point(65, 134);
+            this.rp.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rp.Location = new System.Drawing.Point(102, 231);
             this.rp.Name = "rp";
-            this.rp.Size = new System.Drawing.Size(24, 20);
+            this.rp.Size = new System.Drawing.Size(51, 42);
             this.rp.TabIndex = 3;
             this.rp.Text = "...";
             this.rp.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // btCroix
             // 
+            this.btCroix.BackgroundImage = global::ExoBonjour.Properties.Resources.delete;
             this.btCroix.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btCroix.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.btCroix.Image = global::ExoBonjour.Properties.Resources.delete;
-            this.btCroix.Location = new System.Drawing.Point(436, 200);
+            this.btCroix.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.btCroix.Location = new System.Drawing.Point(608, 366);
             this.btCroix.Name = "btCroix";
-            this.btCroix.Size = new System.Drawing.Size(79, 77);
+            this.btCroix.Size = new System.Drawing.Size(83, 83);
             this.btCroix.TabIndex = 4;
             this.btCroix.UseVisualStyleBackColor = true;
             this.btCroix.Click += new System.EventHandler(this.button1_Click);
@@ -92,7 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(836, 487);
             this.Controls.Add(this.btCroix);
             this.Controls.Add(this.rp);
             this.Controls.Add(this.btBienvenue);
