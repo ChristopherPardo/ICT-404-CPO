@@ -33,15 +33,22 @@ namespace DEDUCTIONS_FISCALES
             {
                 MessageBox.Show("Veuillez-entrer un chiffre");
                 textBox3.Focus();
+                return;
             }
             if (!float.TryParse(textBox5.Text, out familial))
             {
                 MessageBox.Show("Veuillez-entrer un chiffre");
                 textBox5.Focus();
+                return;
             }
             float total = brut / familial;
             label3.Text = "Revenu imposable : " + total.ToString();
-            
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
