@@ -124,7 +124,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 1;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            
             // 
             // textBox4
             // 
@@ -150,6 +150,7 @@
             this.checkBox3.TabIndex = 7;
             this.checkBox3.Text = "Rabais fidélité (%)";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // imageList1
             // 

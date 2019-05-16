@@ -19,6 +19,7 @@ namespace DEDUCTIONS_FISCALES
         public Form1()
         {
             InitializeComponent();
+            textBox1.Enabled = false;
 
         }
 
@@ -29,6 +30,7 @@ namespace DEDUCTIONS_FISCALES
 
             float brut;
             float familial;
+            float fidel;
             if(!float.TryParse(textBox3.Text,out brut))
             {
                 MessageBox.Show("Veuillez-entrer un chiffre");
@@ -41,14 +43,46 @@ namespace DEDUCTIONS_FISCALES
                 textBox5.Focus();
                 return;
             }
+            if (brut < 2000)
+            {
+                MessageBox.Show("Vous ne pouvez pas avoir un salaire brut annuel inférieur à 2'000");//Faire que le calcule ne soit pas fait sir < 2000
+            }
             float total = brut / familial;
+            
+            if(checkBox3.Checked){
+                if (!float.TryParse(textBox1.Text, out fidel))
+                {
+                    MessageBox.Show("Veuillez-entrer un chiffre");
+                    textBox1.Focus();
+                    return;
+                }
+                else
+                {
+                    total -=  fidel / 100 * total;
+                }
+            }
+            
+            
+            if(total < 0)
+            {
+                total = 0;
+                MessageBox.Show("Vous ne pouvez pas devoir une somme négative");
+            }
             label3.Text = "Revenu imposable : " + total.ToString();
-
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
+        
 
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked == true)
+            {
+                textBox1.Enabled = true;
+            }
+            else
+            {
+                textBox1.Enabled = false;
+            }
         }
     }
 }
