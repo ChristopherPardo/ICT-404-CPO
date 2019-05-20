@@ -47,6 +47,7 @@
             this.Bt_HG.TabIndex = 0;
             this.Bt_HG.Text = "Haut/Gauche";
             this.Bt_HG.UseVisualStyleBackColor = true;
+            this.Bt_HG.Click += new System.EventHandler(this.Bt_HG_Click);
             // 
             // Bt_HD
             // 
@@ -57,6 +58,7 @@
             this.Bt_HD.TabIndex = 1;
             this.Bt_HD.Text = "Haut/Droite";
             this.Bt_HD.UseVisualStyleBackColor = true;
+            this.Bt_HD.Click += new System.EventHandler(this.Bt_HD_Click);
             // 
             // Bt_BG
             // 
@@ -67,6 +69,7 @@
             this.Bt_BG.TabIndex = 2;
             this.Bt_BG.Text = "Bas/Gauche";
             this.Bt_BG.UseVisualStyleBackColor = true;
+            this.Bt_BG.Click += new System.EventHandler(this.Bt_BG_Click);
             // 
             // Bt_BD
             // 
@@ -77,6 +80,7 @@
             this.Bt_BD.TabIndex = 3;
             this.Bt_BD.Text = "Bas/Droite";
             this.Bt_BD.UseVisualStyleBackColor = true;
+            this.Bt_BD.Click += new System.EventHandler(this.Bt_BD_Click);
             // 
             // Bt_bleu
             // 

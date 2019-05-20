@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Christopher Pardo
+ * 20.05.2019
+ * FenetreRougeBleu
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +18,7 @@ namespace FenetreRougeBleu
 {
     public partial class Form1 : System.Windows.Forms.Form
     {
-        int scr;
+        Rectangle scr;
         public Form1()
         {
             InitializeComponent();
@@ -31,7 +37,27 @@ namespace FenetreRougeBleu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Screen.PrimaryScreen.Bounds.Width
+            scr = Screen.GetBounds(this);
+        }
+
+        private void Bt_HG_Click(object sender, EventArgs e)
+        {
+            this.Location = new Point(0,0);
+        }
+
+        private void Bt_HD_Click(object sender, EventArgs e)
+        {
+            this.Location = new Point(scr.Height,0);
+        }
+
+        private void Bt_BG_Click(object sender, EventArgs e)
+        {
+            this.Location = new Point(0, scr.Width);
+        }
+
+        private void Bt_BD_Click(object sender, EventArgs e)
+        {
+            this.Location = new Point(scr.Height - this.Height, scr.Width - this.Width);//verifie la soustraction on dirait que on ne peut pas soustraire
         }
     }
 }
