@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Christopher Pardo
+ * 20.05.2019
+ * Déductions Fiscales
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +26,8 @@ namespace DEDUCTIONS_FISCALES
         {
             InitializeComponent();
             textBox1.Enabled = false;
+            textBox4.Enabled = false;
+            textBox2.Enabled = false;
 
         }
 
@@ -31,6 +39,8 @@ namespace DEDUCTIONS_FISCALES
             float brut;
             float familial;
             float fidel;
+            float jeune;
+            float transport;
             if(!float.TryParse(textBox3.Text,out brut))
             {
                 MessageBox.Show("Veuillez-entrer un chiffre");
@@ -45,7 +55,8 @@ namespace DEDUCTIONS_FISCALES
             }
             if (brut < 2000)
             {
-                MessageBox.Show("Vous ne pouvez pas avoir un salaire brut annuel inférieur à 2'000");//Faire que le calcule ne soit pas fait sir < 2000
+                MessageBox.Show("Vous ne pouvez pas avoir un salaire brut annuel inférieur à 2'000");
+                return;
             }
             float total = brut / familial;
             
@@ -60,13 +71,43 @@ namespace DEDUCTIONS_FISCALES
                 {
                     total -=  fidel / 100 * total;
                 }
+                if (checkBox1.Checked == true)
+                {
+                    if (!float.TryParse(textBox4.Text, out jeune))
+                    {
+                        MessageBox.Show("Veuillez-entrer un chiffre");
+                        textBox4.Focus();
+                        return;
+                    }
+                    else
+                    {
+                        total -= jeune;
+                    }
+                }
+                if (checkBox2.Checked == true)
+                {
+                    if (!float.TryParse(textBox2.Text, out transport))
+                    {
+                        MessageBox.Show("Veuillez-entrer un chiffre");
+                        textBox2.Focus();
+                        return;
+                    }
+                    else
+                    {
+                        total -= transport;
+                    }
+                }
+                
             }
+            
+            
             
             
             if(total < 0)
             {
-                total = 0;
                 MessageBox.Show("Vous ne pouvez pas devoir une somme négative");
+                textBox1.Focus();
+                return;
             }
             label3.Text = "Revenu imposable : " + total.ToString();
         }
@@ -82,6 +123,32 @@ namespace DEDUCTIONS_FISCALES
             else
             {
                 textBox1.Enabled = false;
+            }
+        }
+
+        
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                textBox2.Enabled = true;
+            }
+            else
+            {
+                textBox2.Enabled = false;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                textBox4.Enabled = true;
+            }
+            else
+            {
+                textBox4.Enabled = false;
             }
         }
     }
