@@ -43,7 +43,7 @@
             this.Bt_HG.Cursor = System.Windows.Forms.Cursors.Default;
             this.Bt_HG.Location = new System.Drawing.Point(12, 12);
             this.Bt_HG.Name = "Bt_HG";
-            this.Bt_HG.Size = new System.Drawing.Size(109, 39);
+            this.Bt_HG.Size = new System.Drawing.Size(111, 39);
             this.Bt_HG.TabIndex = 0;
             this.Bt_HG.Text = "Haut/Gauche";
             this.Bt_HG.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             // Bt_BG
             // 
             this.Bt_BG.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Bt_BG.Location = new System.Drawing.Point(12, 397);
+            this.Bt_BG.Location = new System.Drawing.Point(12, 398);
             this.Bt_BG.Name = "Bt_BG";
-            this.Bt_BG.Size = new System.Drawing.Size(109, 38);
+            this.Bt_BG.Size = new System.Drawing.Size(111, 39);
             this.Bt_BG.TabIndex = 2;
             this.Bt_BG.Text = "Bas/Gauche";
             this.Bt_BG.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             this.Bt_BD.Cursor = System.Windows.Forms.Cursors.Default;
             this.Bt_BD.Location = new System.Drawing.Point(677, 398);
             this.Bt_BD.Name = "Bt_BD";
-            this.Bt_BD.Size = new System.Drawing.Size(111, 37);
+            this.Bt_BD.Size = new System.Drawing.Size(111, 39);
             this.Bt_BD.TabIndex = 3;
             this.Bt_BD.Text = "Bas/Droite";
             this.Bt_BD.UseVisualStyleBackColor = true;
@@ -140,6 +140,7 @@
             this.Name = "Form1";
             this.Text = "Fenetre";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
 
         }
