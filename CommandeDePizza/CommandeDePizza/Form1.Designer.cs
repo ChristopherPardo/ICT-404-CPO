@@ -68,6 +68,7 @@
             this.BT_Com.TabIndex = 10;
             this.BT_Com.Text = "Commander";
             this.BT_Com.UseVisualStyleBackColor = true;
+            this.BT_Com.Click += new System.EventHandler(this.BT_Com_Click);
             // 
             // label3
             // 
@@ -185,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(636, 468);
             this.Controls.Add(this.RD_E);
             this.Controls.Add(this.RD_N);
             this.Controls.Add(this.RD_F);
