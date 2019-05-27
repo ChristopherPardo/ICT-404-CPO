@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BT_Com = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.TB_Com = new System.Windows.Forms.Label();
             this.RD_EF = new System.Windows.Forms.RadioButton();
             this.RD_F = new System.Windows.Forms.RadioButton();
             this.RD_N = new System.Windows.Forms.RadioButton();
@@ -42,11 +41,12 @@
             this.CB_J = new System.Windows.Forms.CheckBox();
             this.CB_Crev = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TB_Com = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // TB_Table
             // 
-            this.TB_Table.Location = new System.Drawing.Point(221, 36);
+            this.TB_Table.Location = new System.Drawing.Point(155, 36);
             this.TB_Table.Name = "TB_Table";
             this.TB_Table.Size = new System.Drawing.Size(46, 20);
             this.TB_Table.TabIndex = 0;
@@ -54,7 +54,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(181, 39);
+            this.label1.Location = new System.Drawing.Point(115, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 1;
@@ -78,16 +78,6 @@
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 12;
             this.label3.Text = "Commande";
-            // 
-            // TB_Com
-            // 
-            this.TB_Com.AutoSize = true;
-            this.TB_Com.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Com.Location = new System.Drawing.Point(232, 355);
-            this.TB_Com.Name = "TB_Com";
-            this.TB_Com.Size = new System.Drawing.Size(24, 33);
-            this.TB_Com.TabIndex = 13;
-            this.TB_Com.Text = ".";
             // 
             // RD_EF
             // 
@@ -130,7 +120,7 @@
             this.RD_E.Size = new System.Drawing.Size(62, 17);
             this.RD_E.TabIndex = 17;
             this.RD_E.TabStop = true;
-            this.RD_E.Text = "Epaisse";
+            this.RD_E.Text = "Épaisse";
             this.RD_E.UseVisualStyleBackColor = true;
             // 
             // CB_A
@@ -182,16 +172,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pâte";
             // 
+            // TB_Com
+            // 
+            this.TB_Com.BackColor = System.Drawing.Color.Yellow;
+            this.TB_Com.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Com.Location = new System.Drawing.Point(184, 356);
+            this.TB_Com.Multiline = true;
+            this.TB_Com.Name = "TB_Com";
+            this.TB_Com.Size = new System.Drawing.Size(271, 100);
+            this.TB_Com.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(636, 468);
+            this.Controls.Add(this.TB_Com);
             this.Controls.Add(this.RD_E);
             this.Controls.Add(this.RD_N);
             this.Controls.Add(this.RD_F);
             this.Controls.Add(this.RD_EF);
-            this.Controls.Add(this.TB_Com);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.BT_Com);
             this.Controls.Add(this.CB_Crev);
@@ -214,7 +214,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BT_Com;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label TB_Com;
         private System.Windows.Forms.RadioButton RD_EF;
         private System.Windows.Forms.RadioButton RD_F;
         private System.Windows.Forms.RadioButton RD_N;
@@ -224,6 +223,7 @@
         private System.Windows.Forms.CheckBox CB_J;
         private System.Windows.Forms.CheckBox CB_Crev;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox TB_Com;
     }
 }
 
