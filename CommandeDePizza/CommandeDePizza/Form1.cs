@@ -12,9 +12,7 @@ namespace CommandeDePizza
 {
     public partial class Form1 : Form
     {
-        int NBTable;
-        string Pate;
-        string Garn;
+        
         public Form1()
         {
             InitializeComponent();
@@ -23,8 +21,9 @@ namespace CommandeDePizza
 
         private void BT_Com_Click(object sender, EventArgs e)
         {
-            
-
+            int NBTable;
+            string Pate;
+            string Garn = "";
             if (!int.TryParse(TB_Table.Text, out NBTable))
             {
                 MessageBox.Show("Veuillez entrer un numéro de table");
@@ -55,22 +54,38 @@ namespace CommandeDePizza
 
             if (CB_A.Checked == true)
             {
-                Garn = "Anchois";
+                Garn = "des anchois";
             }
             if (CB_Cap.Checked == true)
             {
-                Garn = "Câpres";
+                if (Garn != "")
+                {
+                   Garn += ", ";
+                }
+                Garn += "des câpres";
             }
-            if (CB_Cap.Checked == true)
+            if (CB_J.Checked == true)
             {
-                Garn = "Jambon";
+                if (Garn != "")
+                {
+                    Garn += ", ";
+                }
+                Garn += "du jambon";
             }
-            if (CB_Cap.Checked == true)
+            if (CB_Crev.Checked == true)
             {
-                Garn = "Crevettes"; //continuer les checks Boxes (les if son copié colé donc verifie les variables) et met les dans la text box en bas
+                if (Garn != "")
+                {
+                    Garn += ", ";
+                }
+                Garn += "des crevettes";
+            }
+            if (CB_A.Checked == false && CB_Cap.Checked == false && CB_J.Checked == false && CB_Crev.Checked == false)
+            {
+                Garn = "Aucune garniture";
             }
 
-            TB_Com.Text = "Pour la " + NBTable + " :" + Environment.NewLine + "Pâte " + Pate + " avec ";
+            TB_Com.Text = "Pour la " + NBTable + " :" + Environment.NewLine + "Pâte " + Pate + " avec " + Environment.NewLine + Garn;
         }
     
     }

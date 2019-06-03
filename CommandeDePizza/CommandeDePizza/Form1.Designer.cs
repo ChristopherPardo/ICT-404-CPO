@@ -175,11 +175,11 @@
             // TB_Com
             // 
             this.TB_Com.BackColor = System.Drawing.Color.Yellow;
-            this.TB_Com.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TB_Com.Location = new System.Drawing.Point(184, 356);
+            this.TB_Com.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_Com.Location = new System.Drawing.Point(184, 337);
             this.TB_Com.Multiline = true;
             this.TB_Com.Name = "TB_Com";
-            this.TB_Com.Size = new System.Drawing.Size(271, 100);
+            this.TB_Com.Size = new System.Drawing.Size(332, 119);
             this.TB_Com.TabIndex = 19;
             // 
             // Form1
