@@ -54,7 +54,7 @@
             this.LAB_Bord.Name = "LAB_Bord";
             this.LAB_Bord.Size = new System.Drawing.Size(106, 33);
             this.LAB_Bord.TabIndex = 1;
-            this.LAB_Bord.Text = "A bord";
+            this.LAB_Bord.Text = "À bord";
             // 
             // BT_Ajout
             // 
@@ -74,6 +74,7 @@
             this.BT_Retrait.TabIndex = 4;
             this.BT_Retrait.Text = "<==";
             this.BT_Retrait.UseVisualStyleBackColor = true;
+            this.BT_Retrait.Click += new System.EventHandler(this.BT_Retrait_Click);
             // 
             // LB_Terre
             // 
@@ -93,6 +94,7 @@
             this.LB_Terre.Name = "LB_Terre";
             this.LB_Terre.Size = new System.Drawing.Size(197, 264);
             this.LB_Terre.TabIndex = 6;
+
             // 
             // LB_Bord
             // 
@@ -101,7 +103,7 @@
             this.LB_Bord.Name = "LB_Bord";
             this.LB_Bord.Size = new System.Drawing.Size(197, 264);
             this.LB_Bord.TabIndex = 7;
-            this.LB_Bord.SelectedIndexChanged += new System.EventHandler(this.LB_Bord_SelectedIndexChanged);
+
             // 
             // Form1
             // 
