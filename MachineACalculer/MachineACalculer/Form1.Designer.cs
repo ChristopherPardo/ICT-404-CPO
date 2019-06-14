@@ -62,6 +62,7 @@
             this.BT_1.TabIndex = 0;
             this.BT_1.Text = "1";
             this.BT_1.UseVisualStyleBackColor = true;
+            this.BT_1.Click += new System.EventHandler(this.BT_1_Click);
             // 
             // BT_2
             // 
@@ -71,6 +72,7 @@
             this.BT_2.TabIndex = 1;
             this.BT_2.Text = "2";
             this.BT_2.UseVisualStyleBackColor = true;
+            this.BT_2.Click += new System.EventHandler(this.BT_2_Click);
             // 
             // BT_3
             // 
@@ -80,6 +82,7 @@
             this.BT_3.TabIndex = 2;
             this.BT_3.Text = "3";
             this.BT_3.UseVisualStyleBackColor = true;
+            this.BT_3.Click += new System.EventHandler(this.BT_3_Click);
             // 
             // BT_4
             // 
@@ -89,6 +92,7 @@
             this.BT_4.TabIndex = 3;
             this.BT_4.Text = "4";
             this.BT_4.UseVisualStyleBackColor = true;
+            this.BT_4.Click += new System.EventHandler(this.BT_4_Click);
             // 
             // BT_5
             // 
@@ -98,6 +102,7 @@
             this.BT_5.TabIndex = 4;
             this.BT_5.Text = "5";
             this.BT_5.UseVisualStyleBackColor = true;
+            this.BT_5.Click += new System.EventHandler(this.BT_5_Click);
             // 
             // BT_6
             // 
@@ -107,6 +112,7 @@
             this.BT_6.TabIndex = 6;
             this.BT_6.Text = "6";
             this.BT_6.UseVisualStyleBackColor = true;
+            this.BT_6.Click += new System.EventHandler(this.BT_6_Click);
             // 
             // BT_7
             // 
@@ -116,6 +122,7 @@
             this.BT_7.TabIndex = 7;
             this.BT_7.Text = "7";
             this.BT_7.UseVisualStyleBackColor = true;
+            this.BT_7.Click += new System.EventHandler(this.BT_7_Click);
             // 
             // BT_8
             // 
@@ -125,6 +132,7 @@
             this.BT_8.TabIndex = 8;
             this.BT_8.Text = "8";
             this.BT_8.UseVisualStyleBackColor = true;
+            this.BT_8.Click += new System.EventHandler(this.BT_8_Click);
             // 
             // BT_9
             // 
@@ -134,6 +142,7 @@
             this.BT_9.TabIndex = 9;
             this.BT_9.Text = "9";
             this.BT_9.UseVisualStyleBackColor = true;
+            this.BT_9.Click += new System.EventHandler(this.BT_9_Click);
             // 
             // BT_0
             // 
@@ -143,6 +152,7 @@
             this.BT_0.TabIndex = 10;
             this.BT_0.Text = "0";
             this.BT_0.UseVisualStyleBackColor = true;
+            this.BT_0.Click += new System.EventHandler(this.BT_0_Click);
             // 
             // BT_Decimal
             // 
@@ -277,7 +287,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(486, 450);
             this.Controls.Add(this.BT_Div);
             this.Controls.Add(this.TB_Resultat);
             this.Controls.Add(this.TB_Chiffre2);
@@ -304,6 +314,7 @@
             this.Controls.Add(this.BT_1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
