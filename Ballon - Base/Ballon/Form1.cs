@@ -12,6 +12,7 @@ namespace Ballon
     public partial class frmBallon : Form
     {
         int time = 0;
+        
         public frmBallon()
         {
             InitializeComponent();
@@ -25,6 +26,16 @@ namespace Ballon
         private void frmBallon_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void cmdStart_Click(object sender, EventArgs e)
+        {
+            Random X = new Random();
+            Random Y = new Random();
+
+            pctBallon.Visible = true;
+            //placer un point random avec la pos du ballon
+            pctBallon.Location = new Point(X.Next(0,327), Y.Next(50,275);
         }
     }
 }
