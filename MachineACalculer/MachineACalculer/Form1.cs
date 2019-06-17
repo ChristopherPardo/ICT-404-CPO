@@ -18,7 +18,27 @@ namespace MachineACalculer
         float Resultat = 0;
         bool First = true;
 
-       // void ajout (int Nombre) test de fonction (demander à Carrel comment faire une fonction en c#)
+        private void calcule(int nombre)
+        {
+
+            if (Premier < 10)
+            {
+                if (First == true)
+                {
+                    Premier += nombre;
+                }
+                else
+                {
+                    Deuxieme += nombre;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vous ne pouvez pas entrer un chiffre supperieur à 99");
+                return;
+            }
+
+        }
 
         public Form1()
         {
@@ -27,17 +47,7 @@ namespace MachineACalculer
 
         private void BT_1_Click(object sender, EventArgs e)
         {
-            if (First == true)
-            {
-                if (Premier > 0)
-                {
-                    
-                }
-            }
-            else
-            {
-
-            }
+            calcule(1);
         }
 
         private void BT_2_Click(object sender, EventArgs e)
