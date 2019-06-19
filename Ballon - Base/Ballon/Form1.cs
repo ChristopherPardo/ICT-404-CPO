@@ -20,7 +20,7 @@ namespace Ballon
 
         private void tmrTicTac_Tick(object sender, EventArgs e)
         {
-            lb_1.Text = time++.ToString();
+            //lb_1.Text = time++.ToString();
         }
 
         private void frmBallon_Load(object sender, EventArgs e)
@@ -34,8 +34,9 @@ namespace Ballon
             Random Y = new Random();
 
             pctBallon.Visible = true;
-            //placer un point random avec la pos du ballon
-            pctBallon.Location = new Point(X.Next(0,327), Y.Next(50,275);
+            //Le ballon pourtant avec une position random reste sur le même axe en permanece mais sa pos sur cet axe est random
+            pctBallon.Location = new Point(X.Next(0,327), Y.Next(50,275));
+            lb_1.Text=(X.Next(0, 327).ToString() + " " + Y.Next(50, 275).ToString());
         }
     }
 }
