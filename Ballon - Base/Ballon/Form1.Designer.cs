@@ -60,7 +60,7 @@
             // tmrTicTac
             // 
             this.tmrTicTac.Enabled = true;
-            this.tmrTicTac.Interval = 1000;
+            this.tmrTicTac.Interval = 50;
             this.tmrTicTac.Tick += new System.EventHandler(this.tmrTicTac_Tick);
             // 
             // lb_1
