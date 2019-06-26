@@ -40,6 +40,8 @@
             this.txtNom = new System.Windows.Forms.TextBox();
             this.lblConfirmation = new System.Windows.Forms.Label();
             this.chkpoint = new System.Windows.Forms.CheckBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -66,6 +68,7 @@
             this.cmdValidation.TabIndex = 2;
             this.cmdValidation.Text = "Verifier";
             this.cmdValidation.UseVisualStyleBackColor = true;
+            this.cmdValidation.Click += new System.EventHandler(this.CmdValidation_Click);
             // 
             // chkAt
             // 
@@ -149,11 +152,23 @@
             this.chkpoint.Text = "\".\" présent après \"@\"";
             this.chkpoint.UseVisualStyleBackColor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TestEmail.Properties.Resources.dofus_2019_05_02_00_00_10_Nocta_styz;
+            this.pictureBox1.Location = new System.Drawing.Point(461, 243);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(262, 168);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.chkpoint);
             this.Controls.Add(this.lblConfirmation);
             this.Controls.Add(this.txtNom);
@@ -169,6 +184,7 @@
             this.Name = "Form1";
             this.Text = "Vérification d\'Email";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,6 +204,7 @@
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.Label lblConfirmation;
         private System.Windows.Forms.CheckBox chkpoint;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
