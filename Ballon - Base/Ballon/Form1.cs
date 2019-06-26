@@ -12,8 +12,7 @@ namespace Ballon
     public partial class frmBallon : Form
     {
         int time = 0;
-        Random X = new Random();
-        Random Y = new Random();
+        Random Hasard = new Random();
 
         public frmBallon()
         {
@@ -23,7 +22,7 @@ namespace Ballon
         private void tmrTicTac_Tick(object sender, EventArgs e)
         {
             //lb_1.Text = time++.ToString();
-            pctBallon.Location = new Point(X.Next(0,327), Y.Next(50,275));
+            pctBallon.Location = new Point(Hasard.Next(0,327), Hasard.Next(50,275));
             lb_1.Text = pctBallon.Location.X + " " + pctBallon.Location.Y;
         }
 
@@ -36,8 +35,8 @@ namespace Ballon
         {
             pctBallon.Visible = true;
             //Le ballon pourtant avec une position random reste sur le même axe en permanece mais sa pos sur cet axe est random
-            //pctBallon.Location = new Point(X.Next(0,327), Y.Next(50,275));
-            //lb_1.Text = pctBallon.Location.X + " " + pctBallon.Location.Y;
+            pctBallon.Location = new Point(Hasard.Next(0,327), Hasard.Next(50,275));
+            lb_1.Text = pctBallon.Location.X + " " + pctBallon.Location.Y;
         }
     }
 }
